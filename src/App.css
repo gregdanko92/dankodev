@@ -1,38 +1,324 @@
 .App {
-  text-align: center;
+
+  overscroll-behavior:none;
+  /* overflow:hidden; */
+}
+a {
+  color: #049541;
+  
+}
+a:visited {
+  color: #049541;;
+  font-style: italic;
+}
+body {
+  /* height:60%; */
+  background-color:#f1f2f6;
+  color:  #34431d;;
+  padding:1%;
+  /* min-height: 100%; */
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color:#34431d;;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-header {
+  
+  align-items: center;
+  color: #34431d;;
+  margin: 0%;
+  height:10vh;
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  padding: 0%;
+  padding-bottom:1.5em;
+  border-bottom:  #34431d;;
+  border-style:solid;
+  border-width: 0em;
+  border-bottom-width: 0.1em;
+  scroll-snap-type:none;
+  top:0;
+  left:0;
+  right:0;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+footer {
+  background-color: #101936;
+  color: #049541;;
+  height:10vh;
+  width:100vw;
+  margin-top:100%;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  padding: 0%;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  right: 0;
   display: flex;
-  flex-direction: column;
+}
+
+.footerLeft {
+  padding-left: 2%;
+}
+
+.footerRight {
+  padding-right:2%;
+}
+
+.footer-svg{
+  height:16;
+  width:16;
+  padding: 5px;
+  margin-top:20px;
+  background-color: #049541;;
+  border-radius: 5px;
+  margin-right:7px;
+  transition:1s;
+}
+.footer-svg:hover{
+  background-color: cornsilk;
+  transition:1s;
+}
+
+.contact-links{
+text-align: right;
+margin-top:-5px;
+}
+
+.download-cv{
+  font-family:'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #34431d;
+  padding: 2vh;
+  margin-bottom:3vh;
+  border-radius: 10px;
+  transition-duration: 1.5s;
+}
+.download-cv:hover{
+  transition-duration: 1.5s;
+  background-color:cornsilk ;
+  color: #8891a3;
+}
+.resume-top {
+    align-items: center;
+    color: #34431d;;
+    margin: 0%;
+    height:10vh;
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    scroll-snap-type:none;
+    top:0;
+    left:0;
+    right:0;
+  }
+
+  .about-content{
+    margin: 0%, 6% 3% 0%;
+    color:#34431d;
+    overflow: scroll;
+    height:60em;
+  }
+.job-block-header{
+  align-items: center;
+    color: #34431d;;
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    scroll-snap-type:mandatory;
+}
+.resume-body{
+  height:120em;
+}
+@media (max-width: 375px) {
+  .job-block-header {
+    background-color: yellow;
+    display: inline;
+  }
+  .resume-body{
+    height:150em;
+}
+}
+
+
+.projects{
+  height:120em;
+  overflow: scroll;
+}
+
+p, li {
+  color:cornsilk;
+}
+a:hover{
+  color:cornsilk;
+  transition:1s;
+}
+a{
+  transition:1s;
+}
+.emphasis{
+  font-weight:bolder;
+}
+strong{
+  color:#049541;
+}
+.pdf-container{
+  width:100vw;
+  height:100vh;
+  overflow-y:auto;
+  background-color: white;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  padding:0;
+}
+.proj-header{
+  margin-top:1.5em;
+}
+.header-link{
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-svg-mail{
+  height:16px;
+  width:16px;
+  padding: 5px;
+  margin-top:20px;
+  background-color: #049541;;
+  border-radius: 5px;
+  margin-right:7px;
+  transition:1s;
+}
+.footer-svg-mail:hover{
+  background-color: cornsilk;
+  transition:1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h4 {
+  margin: 1em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.professional-experience{
+  font-size: 1.75em;
+  font-weight:bold;
+  padding-top:0.75em;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1.5em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding:0;
+}
+
+.one-job{
+  border-bottom: 1px solid #34431d;
+  
+}
+.education-section{
+  border-bottom: 1px solid #34431d;
+  height:35vh
+
+}
+
+.skill-block-heading{
+  font-size:1.5em;
+  font-style:bold;
+}
+.skills{
+  margin: 0em 1em;
+}
+.skill-block-parent{
+  padding-top:1em;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 375px) {
+  .skill-block-parent {
+    display: inline;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .resume-body{
+    height:150em;
+}
+}
+
+h3 {
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.resume-image{
+  height:180vh;
+  width:200vw;
+  overflow-y: hidden;
+}
+
+.job-description {
+/* padding:0% 5% */
+}
+
+.education-line{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content:space-between;
+}
+
+.site-body-container{
+  padding:0% 5%;
+
+
+}
+
+.work-experience-component-container{
+  overflow-y: scroll;
+}
+
+p{
+  line-height:25px;
+  color:#362f2d
+}
+
+.send-message{
+  font-size: 23px;
+  border: solid 2px #362f2d;
+  color:#362f2d;
+  padding:15px;
+  border-radius:25px;
+  transition:1s;
+
+}
+.link-message{
+  text-decoration: none;
+}
+
+.send-message:hover{
+  background-color:#049541;
+  transition:1s;
+}
+.copyright {
+  margin-top:5px
 }
